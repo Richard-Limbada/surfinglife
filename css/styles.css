@@ -1,0 +1,794 @@
+:root {
+  --main-color: #FF4321;
+  --main-tint: #ff7056;
+}
+
+.orange {
+    color: var(--main-color);
+}
+/*fade in animation*/
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-duration: 2s;
+}
+.fadeInDown2 {
+    animation-name: fadeInDown;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+.fadeInDown3 {
+    animation-name: fadeInDown;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-duration: 2s;
+}
+.fadeInDown5 {
+    animation-name: fadeInDown;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4.80s;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-45%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInright {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  animation-name: fadeInRight;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-duration: 2;
+}
+.fadeInright2 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInRight;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-duration: 3s;
+}
+.fadeInright3 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  animation-name: fadeInRight;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.fadeInright5 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  animation-name: fadeInRight;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5.10s;
+    animation-duration: 2s;
+}
+.fadeInrightBig6 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInRightBig;
+    animation-timing-function: ease-out;
+    animation-delay: 7.10s;
+    animation-duration: 0.45s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeout { 
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { 
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { 
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeout4 {
+    animation-fill-mode: backwards;
+    opacity: 0;
+    animation-name: fadeout;
+    animation-duration: 1.10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+}
+.fadein {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+}
+
+.fadein2 {
+    animation-name: fadein;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+.fadein3 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+.fadein4 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.fadein4half {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+}
+.fadein5 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4.30s;
+}
+.fadein6 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 1.30s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5.30s;
+}
+.fadein7 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+.fadein9 {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 9s;
+}
+
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+    opacity: 0;
+    animation-name: fadeInUpBig;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.60s;
+    animation-duration: 2.80s;
+    animation-fill-mode: forwards;
+}
+
+/*Fade end*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;  
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.main {
+    position: relative;
+    z-index: 50;
+  width: 100%;
+    height: 1600px;
+    background-color: #000000;
+    background-image: url(../img/surf-background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  margin: 120px auto;
+  padding: 20px;
+  background-color: #000000;
+
+}
+.main:after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255, 0) 90%);
+  width: 100%;
+  height: 700px;
+}
+.gradient-fade:after {
+    opacity: 1;
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0, 0) 90%);
+  width: 100%;
+  height: 400px;
+}
+
+.home-banner {
+    position: absolute;
+    margin-top: -200px;
+    width: 100%;
+    min-height: 700px;
+    background-color: #666666;
+    background-image: url(../img/wave-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+   
+}
+
+.home-banner:after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0, 1) 90%);
+  width: 100%;
+  height: 15em;
+}
+
+iframe {
+    position:absolute; 
+    top: 0px; 
+    left: 0; 
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    pointer-events: none;
+    
+}
+.banner-text {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 30;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+  font-size: 3em;
+  color: white;
+    padding: 0;
+}
+
+h2 .main-header{
+      font-size: 1.3em;
+    color: white;
+}
+h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    color: var(--main-color);
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    margin: 25px 0 6px;
+    color: var(--main-color);
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0 0 0.25em;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin: 1em 0 0;
+    color: black;
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    width: 320px;
+    text-decoration: none;
+    color: var(--main-color);
+} 
+.welcome{
+  margin-top: 90px;
+    margin-bottom: 20px;
+  color: white;
+     padding: 0;
+}
+.main2 {
+font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+  font-size: 1.6em;
+  color: white;
+    padding: 0;
+    margin: 18px auto;
+    text-align: center
+}
+
+.intro {
+    position: relative;
+  z-index: 30;
+    margin-left: 12.4983%;
+    float: left;
+    height: 400px;
+    padding-top: 50px;
+    max-width: 520px;
+}
+.intro:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.intro p {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+.intro strong {
+    font-weight: 500;   
+} 
+input {
+    margin: 0 30px 0 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    width: 350px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-style: none;
+    border: solid 1.5px;
+    border-color: var(--main-color);
+    border-radius: 7px;
+    background: none;
+    background-color: rgba(255,255,255,.1);
+
+}
+input[type=button], input[type=submit], input[type=reset] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    width: 100px;
+    border-radius: 7px;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: var(--main-tint);
+    border-color: var(--main-tint);
+    transition: .30s ease-in
+}
+
+.featured-articles-header {
+    float: left;
+    margin-left: 8.333%;
+    background-color: var(--main-color);
+    height: 55px;
+    display: inline-block;
+}
+.featured-articles {
+    padding:  2.0825%4.165%;
+    float: left;
+    margin-left: 8.333%;
+    background-color: white;
+    height: auto;
+    display: inline-block;
+}
+
+
+.featured-articles-header h3 {
+    color: white;
+    line-height: 55px;
+    text-align: center;
+}
+
+.featured-articles hr {
+    color: #c7c7c7;
+    margin: 20px 0;
+    
+}
+.featured-articles .divider-v {
+    width: 8.333%;
+    float: left;
+    min-height: 360px;
+}
+
+.featured-article {
+    float: left;
+    margin-top: 2.0825%;
+    margin-bottom: 2.0825%;
+    height: auto;
+}
+.featured-article p{
+    display: flex
+}
+.featured-article img{
+    margin: 0 1.25em 1em 0;
+    display: inline-block;
+}
+
+.featured-article .fit {
+    width: 100%;
+    height: 100%;
+
+}
+.featured-article .left{
+float: left;
+}
+
+.article-meta {
+    margin: 0 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #777777;
+}
+
+.top {
+  display: block;
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  background-color: #444444;
+  border-radius: 5px;
+  color: #666666;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.top:hover {
+  background-color: #555555;
+    color: #ffffff;
+}
+
+
+/*--- navigation styles 
+---------------------------*/
+
+nav { 
+    position: relative;
+  width: 100%;
+  height: 80px;
+    background-color:  #000000;
+    background-color:  rgba(0, 0, 0, 0.3);
+    z-index: 200;
+    border: none;
+}
+
+#logo {
+display: block;  
+   opacity: 0; 
+  float: left;
+ animation: fadein 1.30s ease-in 4s forwards;
+}
+
+.logo {
+    
+    float: left;
+    width: 145px;
+    height: 45px;
+    margin: 0 30px 10px 50px; 
+    
+}
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+
+nav ul {
+  opacity: 0;
+  float: right;
+  padding:0;
+  margin:0;
+  margin-right: 60px;
+  list-style: none;
+  position: relative;
+ animation: fadein 1.30s ease-in 4s forwards;
+  }
+  
+/* Positioning the navigation items inline */
+
+nav ul li {
+  margin: 0 5px;
+  display:inline-block;
+  float: left;
+    
+  }
+
+
+nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 80px;
+    text-decoration: none;
+    float: left;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 1.2s;
+
+}
+
+nav a:hover { 
+  color: rgba(255,255,255, 1); 
+}
+
+
+
+
+
+/*12 col grid styles*/
+
+
+
+.col-dk-12 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col-dk-10 {
+    display: block;
+    width: 83.33%;
+    box-sizing: border-box;
+}
+.col-dk-8 {
+     display: block;
+    width: 66.66%;
+    box-sizing: border-box;
+}
+.col-dk-6 {
+    width: 50%;
+}
+.col-dk-5 {
+    width: 41.66%;
+    box-sizing: border-box;
+}
+.col-dk-4half {
+    display: block;
+    width: 37.4983%;;
+    box-sizing: border-box;
+}
+.col-dk-4 {
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.col-dk-3 {
+    display: block;
+    width: 25%;
+    box-sizing: border-box;
+}
+.col-dk-2 {
+    display: block;
+    width: 16.666%;
+    box-sizing: border-box;
+}
+
+.col-dk-half {
+    display: block;
+    width: 4.165%;
+    box-sizing: border-box;
+}
+.col-dk-1half {
+    display: block;
+    width: 12.495%;
+    box-sizing: border-box;
+}
+col-dk-1 {
+    display: block;
+    width: 8.333%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.featured-articles-bottom {
+    margin: 0 8.333% 0 ;
+    padding: 10px;
+    background-color: #1a1a1a;
+    background-color: rgba(255,255,255,.1);
+    position: relative;
+    display: inline-block;
+    height: auto;
+
+}
+
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.featured-articles-bottom button {
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+button:hover { 
+    background-color: var(--main-tint);
+    color: rgba(255,255,255, 1);
+}
+  
+}
