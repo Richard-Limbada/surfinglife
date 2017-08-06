@@ -3,10 +3,15 @@
   --main-tint: #ff7056;
 }
 
+.left{
+float: left;
+}
+
 .orange {
     color: var(--main-color);
 }
 /*fade in animation*/
+
 
 @keyframes fadeInDown {
   from {
@@ -107,13 +112,13 @@
     animation-delay: 5.10s;
     animation-duration: 2s;
 }
-.fadeInrightBig6 {
+.fadeInrightBig7 {
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadeInRightBig;
     animation-timing-function: ease-out;
-    animation-delay: 7.10s;
-    animation-duration: 0.45s;
+    animation-delay: 7.60s;
+    animation-duration: 0.30s;
 }
 
 @keyframes fadein {
@@ -287,6 +292,7 @@
     animation-fill-mode: forwards;
 }
 
+
 /*Fade end*/
 
 
@@ -310,12 +316,12 @@ body {
     position: relative;
     z-index: 50;
   width: 100%;
-    height: 1600px;
+    height: auto;
     background-color: #000000;
     background-image: url(../img/surf-background.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-  margin: 120px auto;
+  margin: 120px auto 50px;
   padding: 20px;
   background-color: #000000;
 
@@ -348,7 +354,7 @@ body {
     position: absolute;
     margin-top: -200px;
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
     background-color: #666666;
     background-image: url(../img/wave-background.jpg);
     background-size: cover;
@@ -374,7 +380,7 @@ iframe {
     top: 0px; 
     left: 0; 
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     height: 100%;
     pointer-events: none;
     
@@ -418,6 +424,7 @@ h5 {
     font-size: 1.2em;
     margin: 0 0 0.25em;
     color: black;
+    text-align: left;
 }
 
 p {
@@ -426,6 +433,7 @@ p {
     font-size: 1em;
     margin: 1em 0 0;
     color: black;
+    text-align: left;
 }
 
 
@@ -462,7 +470,6 @@ font-family: 'Roboto', sans-serif;
     position: relative;
   z-index: 30;
     margin-left: 12.4983%;
-    float: left;
     height: 400px;
     padding-top: 50px;
     max-width: 520px;
@@ -519,17 +526,19 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 }
 
 .featured-articles-header {
-    float: left;
-    margin-left: 8.333%;
+    margin: 0 auto;
+    text-align: center;
     background-color: var(--main-color);
     height: 55px;
     display: inline-block;
 }
 .featured-articles {
-    padding:  2.0825%4.165%;
-    float: left;
-    margin-left: 8.333%;
+    padding:  2.0825% 4.165%;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
+    background: linear-gradient(#ffffff, #ededed);
     height: auto;
     display: inline-block;
 }
@@ -571,9 +580,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
     height: 100%;
 
 }
-.featured-article .left{
-float: left;
-}
+
 
 .article-meta {
     margin: 0 0 0 0;
@@ -590,17 +597,25 @@ float: left;
   right: 20px;
   bottom: 50px;
   background-color: #444444;
+  background-color:  rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  color: #666666;
+  color: #d9d9d9;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 20px;
+    z-index: 400;
+        transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
 }
 
 .top:hover {
-  background-color: #555555;
+  background-color: var(--main-tint);
     color: #ffffff;
+    padding-bottom: 14px;
+      bottom: 55px;
 }
 
 
@@ -647,14 +662,12 @@ nav:after {
  * and adding "position:reltive" */
 
 nav ul {
-  opacity: 0;
   float: right;
   padding:0;
   margin:0;
   margin-right: 60px;
   list-style: none;
   position: relative;
- animation: fadein 1.30s ease-in 4s forwards;
   }
   
 /* Positioning the navigation items inline */
@@ -672,7 +685,6 @@ nav a {
     font-weight: 100;
     font-size: 18px;
     line-height: 80px;
-    text-decoration: none;
     float: left;
     padding: 0 15px;
     color: rgba(255, 255, 255, 0.5);
@@ -684,8 +696,62 @@ nav a:hover {
   color: rgba(255,255,255, 1); 
 }
 
+a {
+    text-decoration: none;
+}
 
 
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    margin-top: 14px;
+    margin-right: 15px;
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.12s;
+    transition-timing-function: ease-in;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    text-align: center;
+    width: 120px;
+    display: none;
+    position: absolute;
+    right: -55px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-align: center;
+    width: 120px;
+    color: black;
+    padding: 5px auto;
+    text-decoration: none;
+    display: block;
+     background-color: #dedede;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a:hover {background-color:var(--main-tint);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--main-color);
+    width: 120px;
+    margin-right: 0;
+}
 
 
 /*12 col grid styles*/
@@ -758,10 +824,14 @@ col-dk-1 {
 
 
 .featured-articles-bottom {
-    margin: 0 8.333% 0 ;
-    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    
+    margin-top: 8px;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
     background-color: #1a1a1a;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255,255,255,.8);
     position: relative;
     display: inline-block;
     height: auto;
@@ -791,4 +861,225 @@ button:hover {
     color: rgba(255,255,255, 1);
 }
   
+.insta-pic {
+    position: relative;
+    background-color: var(--main-color)
+}
+
+.image {
+    position: relative;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.insta-pic:hover .image {
+  opacity: 0.3;
+}
+
+.insta-pic:hover .overlay {
+  opacity: 1;
+}
+
+.insta-pic a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  animation: none;
+}
+
+instagram {
+    position: absolute;
+    
+}
+
+footer {
+    background-color: #414141;
+    padding-top: 20px;
+
+}
+footer p {
+    font-weight: 200;
+    color: white;
+    margin: 0.7em 0 2.5em;
+    color: #c4c4c4;
+}
+
+footer nav a {
+    line-height: 38px;
+    padding: 0 12px 0 0;
+
+
+
+}
+footer nav ul {
+    animation: none;
+    
+}
+footer nav ul li {
+    margin-left: 0
+}
+footer h4 {
+    color: #c4c4c4;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.footer-info {
+    padding: 5px 8.3333%;
+}
+.footer-nav {
+    height: auto;
+    background-color: #414141;
+    opacity: 1;
+    z-index: 0
+
+}
+.copywrite {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    display: inline-block;
+    background-color: #4d4d4d;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copywrite a {
+    color: #a0a0a0;
+}
+
+* {
+    animation: none;
+    transition: none;
+}
+
+.left{
+float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    iframe {
+        display: none;
+    }
+    
+    .home-banner {
+        background-image: url(../img/wave-background-1024.jpg);
+        background-position: center;
+        background-size: auto;
+    }
+    
+   .col-md-12 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col-md-10 {
+    display: block;
+    width: 83.33%;
+    box-sizing: border-box;
+}
+.col-md-8 {
+     display: block;
+    width: 66.66%;
+    box-sizing: border-box;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.66%;
+    box-sizing: border-box;
+}
+.col-md-4half {
+    display: block;
+    width: 37.4983%;;
+    box-sizing: border-box;
+}
+.col-md-4 {
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.col-md-3 {
+    display: block;
+    width: 25%;
+    box-sizing: border-box;
+}
+.col-md-2 {
+    display: block;
+    width: 16.666%;
+    box-sizing: border-box;
+}
+
+.col-md-half {
+    display: block;
+    width: 4.165%;
+    box-sizing: border-box;
+}
+.col-md-1half {
+    display: block;
+    width: 12.495%;
+    box-sizing: border-box;
+}
+col-md-1 {
+    display: block;
+    width: 8.333%;
+    box-sizing: border-box;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    nav .menu {
+        display: none;
+    }
+    
+    .dropdown {
+    display: inline-block;
+}
+    
+    .main {
+        padding: 0;
+    }
+    .footer-nav{
+    
+    padding: 0 8.3333% 10px;
+}
+    
+    
+    .col-sd-4 {
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+     .col-sd-12 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+    
 }
